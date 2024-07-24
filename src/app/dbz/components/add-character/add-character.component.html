@@ -1,0 +1,26 @@
+<h4>Agregar personaje</h4>
+
+<form class="row" (ngSubmit)="emitCharacter()">
+
+  <input
+    type="text"
+    [(ngModel)]="character.name"
+    name="name"
+    class="form-control mb-2"
+    placeholder="Nombre">
+
+  <input
+    type="text"
+    [(ngModel)]="character.power"
+    name="power"
+    class="form-control mb-2"
+    placeholder="Poder">
+
+  <button type="submit" class="btn btn-danger">
+    Agregar
+  </button>
+
+  <!-- Esto se le conoce como pipes, al hacer el caracter de tuberia -->
+  <!-- <pre>{{ character | json }}</pre> -->
+
+</form>
